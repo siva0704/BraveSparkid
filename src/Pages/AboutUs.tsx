@@ -1,13 +1,10 @@
+import { Cards } from "../Components/Cards"
+
 export const AboutUs: React.FC<{}> = () => { 
     
     return <>
     
-    <h1>
-
-AboutUs
-
-    </h1>
-    
+<Cards/>
     
     
     </>
