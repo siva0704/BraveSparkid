@@ -6,7 +6,7 @@ export const AboutUs: React.FC<{}> = () => {
     return <>
     
 <Cards/>
-    <ContactUs/>
+
     
     </>
 
