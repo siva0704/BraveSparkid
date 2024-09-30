@@ -7,8 +7,6 @@ export const AboutUs: React.FC<{}> = () => {
     
 <Cards/>
 
-<ContactUs/>
-    
     
     </>
 
