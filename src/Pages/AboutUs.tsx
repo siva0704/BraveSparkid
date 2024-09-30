@@ -6,7 +6,7 @@ export const AboutUs: React.FC<{}> = () => {
     
 <Cards/>
     
-    
+    <h1>hello</h1>
     </>
 
 
