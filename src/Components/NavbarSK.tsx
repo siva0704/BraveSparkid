@@ -1,47 +1,35 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
+import logo from '../Assets/image.png';
 
 export const NavbarSK: React.FC<{}> = () => { 
     
     return <>
     
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home"><img src="" alt="Logo" /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#pricing">Courses</Nav.Link>
-            <Nav.Link href="#pricing">AboutUs</Nav.Link>
-            <Nav.Link href="#pricing">Franchaisees</Nav.Link>
-            <Nav.Link href="#pricing">ContactUs</Nav.Link>
-            <Nav.Link href="#pricing">Gallary</Nav.Link>
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Nav>
-            {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
-            <Nav.Link eventKey={2} href="enroll">
-              Register/Enroll
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+  
+    <nav className="bg-gradient-to-r from-white via-white to-orange-200 px-8 py-4 shadow-md">
+      <div className="flex justify-between items-center">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <img src={logo} alt="Logo" className="w-10 h-10" />
+          <span className="text-lg font-bold text-orange-600">Spark Kids</span>
+        </div>
+
+        {/* Navigation Links */}
+        <div className="hidden md:flex space-x-8 ml-auto text-gray-600">
+          <a href="" className="hover:text-orange-600">Home</a>
+          <a href="" className="hover:text-orange-600">About Us</a>
+          <a href="" className="hover:text-orange-600">Programs</a>
+          <a href="" className="hover:text-orange-600">Franchise</a>
+          <a href="" className="hover:text-orange-600">Contact Us</a>
+        </div>
+
+        {/* Join Now Button */}
+        <button className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">
+          Join Now
+        </button>
+      </div>
+    </nav>
+  );
     
     
     </>
